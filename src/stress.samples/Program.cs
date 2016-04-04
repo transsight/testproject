@@ -19,7 +19,7 @@ namespace stress.samples
     {
         private static void Main(string[] args)
         {
-            String S = "test2";
+            String DM = "test2";
             CancellationTokenSource tokenSource = new CancellationTokenSource(TimeSpan.FromSeconds(20));
 
             new ConcurrentDictionaryLoadTesting().SimpleLoad(tokenSource.Token);
